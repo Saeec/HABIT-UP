@@ -1,1 +1,4 @@
 # Habit-Tracker
+We’re a team of passionate developers helping individuals build better habits through consistency, accountability, and smart tracking tools.
+With HABIT UP, track your daily habits, stay consistent, and build better routines with our powerful habit tracker. Visualize progress on a calendar, maintain streaks, get email reminders, and compete with others on the leaderboard. Whether you're starting new habits or breaking old ones, our platform keeps you motivated, accountable, and on track every single day. Start your journey today!
+We empower users to build and maintain positive daily habits by offering a smart tracking system with streaks, calendar views, personalized reminders, and a competitive leaderboard. Our platform ensures accountability, motivation, and long-term consistency by visually showcasing progress and engaging users with friendly competition and timely notifications.
