@@ -9,7 +9,8 @@ function App() {
     email: 'saee20102005@gmail.com',
     dob: 'DD/MM/YYYY',
     joinDate: 'DD/MM/YYYY',
-    phone: '+917559125944'
+    phone: '+917559125944',
+    gender: 'Female'
   };
 
   return (

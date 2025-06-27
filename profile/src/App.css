@@ -78,14 +78,16 @@ body {
   color:#2C2C2C;
 }
 .profile-card{
+  
 background-color: #393D46;
 border-radius: 20px;
 width:10cm;
-height:11cm;
+height:11.7cm;
 margin: 0 auto;
 color: #DFD1B7;
 justify-items: center;
 padding: 2.5rem;
+
 
 
 }
@@ -98,6 +100,11 @@ padding: 2.5rem;
 }
 .user-pfp{
   justify-self: center;
+  border: 3px solid #212832;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6); /* glow effect */
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 50%;
+  
 }
 .details-1{
   justify-items: center;
@@ -134,4 +141,11 @@ padding: 2.5rem;
   display: flex;
   margin-left: 3cm;
   margin-right: 3cm;
+}
+.abt{
+  justify-self: center;
+  font-style: italic;
+}
+.About-me{
+  margin-top: 1px;
 }
