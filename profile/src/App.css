@@ -1,0 +1,137 @@
+body {
+  background-color: #212832;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo-section {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  left: 2rem;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
+.nav-link{
+  color:#DFD1B7;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  gap: 1.5rem;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile-heading {
+  background-color: #DFD1B7;
+  border-radius: 20px;
+  width: 5cm;
+  height: 1.3cm;
+  margin: 2rem auto 3rem; /* Centers horizontally */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding: 0; /* Reset padding */
+  text-align: center; /* Fallback for text */
+  box-sizing: border-box; /* Includes padding in width/height */
+  color:#2C2C2C;
+}
+.profile-card{
+background-color: #393D46;
+border-radius: 20px;
+width:10cm;
+height:11cm;
+margin: 0 auto;
+color: #DFD1B7;
+justify-items: center;
+padding: 2.5rem;
+
+
+}
+.user-details{
+  margin: 2rem auto 3rem;
+  
+}
+.user-name{
+  justify-self: center;
+}
+.user-pfp{
+  justify-self: center;
+}
+.details-1{
+  justify-items: center;
+}
+.details-2{
+  justify-items: center;
+}
+.LogOut{
+  background-color: #DFD1B7;
+  border-radius: 20px;
+  height: 1cm;
+  text-decoration: none;
+  width:2.2cm;
+  text-align: center;
+  padding-top: 11px;
+  color: #2C2C2C;
+  font-weight: bold;
+  width: 2.5cm;
+
+}
+.EditProfile{
+  background-color: #DFD1B7;
+  margin-left:auto;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 11px;
+  color: #2C2C2C;
+  font-weight: bold;
+  width:2.5cm;
+
+}
+.side-links{
+  display: flex;
+  margin-left: 3cm;
+  margin-right: 3cm;
+}
