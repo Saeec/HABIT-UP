@@ -1,0 +1,273 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  margin-top: ;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center; /* Changed from baseline to center */
+  position: absolute;
+  left: 2rem;
+  gap: 0.5rem; /* Added gap for consistent spacing */
+}
+
+.logo {
+  color: white;
+  font-weight: 900;
+  font-size: 25px;
+  /* Removed margin-right since we're using gap now */
+}
+
+.tagline {
+  font-size: 1rem;
+  color: white;
+  font-family: 'Moon Dance', cursive;
+  transform: translateY(2px); /* Fine-tune vertical alignment if needed */
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+body {
+  background-color: #212832;
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: 'Inter', sans-serif;
+
+}
+
+
+
+
+.nav-link{
+  color:#DFD1B7;
+  text-decoration: none;
+  margin-left: 63px;
+}
+.icons {
+  display: flex;
+  gap: 1.5rem;
+}
+.icon {
+  width: 16.5px;
+  height: 18.33px;
+  margin-left: 2.75px;
+  
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+/* src/App.css */
+
+.rankers-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.ranker-card {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.avatar {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.name {
+  margin-top: 50px;
+  font-weight: 300;
+  color: white;
+  font-family: 'Anaheim', sans-serif;
+  font-size: 23px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 5px 10px 15px;
+  margin-top: 10px;
+  color: white;
+}
+.ranker-card.rank-1 {
+  margin-top: 5px; /* less margin to push it upward */
+}
+.leaderboard-table {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+}
+
+.leaderboard-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table thead {
+  background-color: #334155;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #475569;
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: #2d3748;
+}
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color:#DFD1B7;
+  font-weight: 700px;
+  font-size:15px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+.nav-link.active {
+  background-color: #334155; /* Square/box background */
+  border-radius: 4px;
+  border-width: 93px;
+  
+  width: 2.4cm;
+  text-align: center;
+}
+.profile-heading {
+  background-color: #DFD1B7;
+  border-radius: 20px;
+  width: 5cm;
+  height: 1.3cm;
+  margin: 2rem auto 3rem; /* Centers horizontally */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding: 0; /* Reset padding */
+  text-align: center; /* Fallback for text */
+  box-sizing: border-box; /* Includes padding in width/height */
+  color:#2C2C2C;
+}
+.profile-card{
+  
+background-color: #393D46;
+border-radius: 20px;
+width:10cm;
+height:11.7cm;
+margin: 0 auto;
+color: #DFD1B7;
+justify-items: center;
+padding: 2.5rem;
+
+
+
+}
+.user-details{
+  margin: 2rem auto 3rem;
+  
+}
+.user-name{
+  justify-self: center;
+}
+.user-pfp{
+  justify-self: center;
+  border: 3px solid #212832;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6); /* glow effect */
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 50%;
+  
+}
+.details-1{
+  justify-items: center;
+}
+.details-2{
+  justify-items: center;
+}
+.LogOut{
+  background-color: #DFD1B7;
+  border-radius: 20px;
+  height: 1cm;
+  text-decoration: none;
+  width:2.2cm;
+  text-align: center;
+  padding-top: 11px;
+  color: #2C2C2C;
+  font-weight: bold;
+  width: 2.5cm;
+
+}
+.EditProfile{
+  background-color: #DFD1B7;
+  margin-left:auto;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 11px;
+  color: #2C2C2C;
+  font-weight: bold;
+  width:2.5cm;
+
+}
+.side-links{
+  display: flex;
+  margin-left: 3cm;
+  margin-right: 3cm;
+}
+.abt{
+  justify-self: center;
+  font-style: italic;
+}
+.About-me{
+  margin-top: 1px;
+}

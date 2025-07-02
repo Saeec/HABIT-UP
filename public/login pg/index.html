@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit Up - Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="min-h-screen bg-[url('../../src/Assets/bodybg_login_signup.jpeg')] overflow-hidden bg-cover bg-fixed bg-no-repeat bg-center font-sans">
+
+  <div class="flex min-h-screen">
+    
+    <!-- Left Panel -->
+    <div class="w-1/2  flex items-center justify-center relative overflow-hidden">
+       
+
+        <!-- Title Top Left -->
+        <div class="absolute top-6 left-8 flex items-center space-x-2">
+        <h1 class="text-white text-xl font-bold tracking-wide">HABIT UP</h1>
+        <p class="text-white text-sm italic">~start your journey now!!</p>
+        </div>
+
+      <div class="w-[80%] max-w-md">
+        
+        <h1 class="text-3xl font-bold text-gray-900 mb-6 ml-10">WELCOME BACK!</h1>
+
+        <form id="signupForm" class="space-y-4">
+            
+          <div class="space-y-1">
+             <p class="text-sm font-bold">EMAIL-ADDRESS</p>
+              <input type="email"  class="w-3/4 px-3 py-2 rounded-md bg-gray-200 outline-none" required />
+         </div>
+        <div class="space-y-1">
+  <p class="text-sm font-bold">PASSWORD</p>
+  <input type="password" class="w-3/4 px-3 py-2 rounded-md bg-gray-200 outline-none" required />
+  <div class="text-right w-3/4">
+    <a href="#" class="text-sm text-black-600 hover:underline">Forgot password?</a>
+  </div>
+</div>
+
+          
+          <button type="submit" class="w-3/4 py-2 bg-white text-black rounded-md hover:bg-gray-100 font-semibold">Log in</button>
+
+          <button type="button" class="w-3/4 py-2 border border-none rounded-md flex items-center justify-center gap-2 bg-white hover:bg-gray-100">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5">
+            Sign in with Google
+          </button>
+
+          <p class=" w-3/4 text-sm text-center mt-2 text-black">Don't have an account? <a href="#" class="underline">Sign up</a></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="w-1/2  flex items-center justify-center">
+      <img src="../../src/Assets/login pg img.svg" alt="Illustration" class="w-[60%]" />
+    </div>
+  </div>
+
+ <script src="script.js"></script>
+
+
+</body>
+</html>
