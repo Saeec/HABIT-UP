@@ -1,0 +1,165 @@
+/* Background and container */
+.signup-body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Flex container split left and right */
+.signup-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+/* Title at top left */
+.top-left-title {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  color: white;
+}
+
+.top-left-title h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.top-left-title p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Signup form wrapper */
+.form-wrapper {
+  width: 80%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+.form-wrapper h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Input fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group p {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f1f1f1;
+  transition: border 0.2s ease;
+}
+
+.form-group input:focus {
+  border: 1px solid #888;
+}
+
+/* Submit button */
+.primary-btn {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #eaeaea;
+}
+
+/* Google button */
+.google-btn {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.7rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.google-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.login-link a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-panel img {
+  width: 60%;
+  max-width: 400px;
+}
+body, html {
+  overflow: hidden;
+}
