@@ -15,28 +15,31 @@
   gap: 0.5rem; /* Added gap for consistent spacing */
 }
 
-.logo {
-  color: white;
-  font-weight: 900;
-  font-size: 25px;
-  /* Removed margin-right since we're using gap now */
-}
 
-.tagline {
-  font-size: 1rem;
-  color: white;
-  font-family: 'Moon Dance', cursive;
-  transform: translateY(2px); /* Fine-tune vertical alignment if needed */
-}
+
+
 
 .navigation {
   display: flex;
-  gap: 1rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: 400;
-  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 48px; /* spacing between links */
+  flex-grow: 1;
+  margin-left: 250px; /* Pushes nav to the right of logo/slogan */
+  margin-right: auto;
+}
+
+.nav-link {
+  color: #DFD1B7;
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 300;
+  transition: color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 body {
@@ -51,11 +54,7 @@ body {
 
 
 
-.nav-link{
-  color:#DFD1B7;
-  text-decoration: none;
-  margin-left: 63px;
-}
+
 .icons {
   display: flex;
   gap: 1.5rem;
@@ -170,7 +169,7 @@ body {
   text-decoration: none;
   color:#DFD1B7;
   font-weight: 700px;
-  font-size:15px;
+  font-size:0.8rem;
   transition: color 0.2s ease;
 }
 

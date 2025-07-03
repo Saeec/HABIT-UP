@@ -5,7 +5,7 @@ function ProfilePage()
 {
     return (
         <div>
-            <Header/>
+            <Header></Header>
             <UserProfileCard/>
         </div>
     )

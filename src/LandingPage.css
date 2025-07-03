@@ -8,7 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #212832;
-  background-image: url('./Assets/Dashboard-waves.svg');
+ /* background-image: url('./Assets/Dashboard-waves.svg');*/
   background-repeat: no-repeat;
   background-size: cover;
   color: #dfd1b7;

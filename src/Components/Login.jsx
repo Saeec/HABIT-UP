@@ -4,6 +4,7 @@ import loginImage from '../../src/Assets/login pg img.svg';
 import bodyBg from '../../src/Assets/bodybg_login_signup.jpeg';
 import name from '../../src/Assets/NAME.png'
 
+
 const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // prevent page refresh
@@ -33,7 +34,7 @@ const Login = () => {
   return (
     <div
       className="login-body"
-      style={{ backgroundImage: `url(${bodyBg})` }}
+      
     >
       <div className="login-container">
 

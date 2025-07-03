@@ -6,10 +6,11 @@ import Signup from './Components/Signup';
 import Login from './Components/Login';
 import AboutUs from './Components/AboutUs';
 import LandingPage from './Components/LandingPage';
+import Header from './Components/Header';
 
 function App() {
   return (
-  <LandingPage/>
+  <ProfilePage/>
   );
 }
 

@@ -16,6 +16,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: './Assets/bodybg_login_signup.jpeg';
 }
 
 /* Main layout */
@@ -33,6 +34,7 @@ body, html {
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 /* Title top left */
@@ -155,6 +157,8 @@ form p a {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 .right-panel img {

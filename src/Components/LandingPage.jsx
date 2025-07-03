@@ -8,7 +8,11 @@ import DashboardWaves from '../Assets/Dashboard-waves.svg';
 
 const LandingPage = () => {
   return (
-    <div className="landing-page">
+    <div
+  className="landing-page"
+  style={{ backgroundImage: `url(${DashboardWaves})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
+>
+
       {/* Navigation */}
       <nav className="navbar">
         <div className="logo-container">
@@ -20,7 +24,7 @@ const LandingPage = () => {
           <img src={profileIcon} alt="Profile" className="profile-icon" />
         </div>
       </nav>
-
+      
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-text">

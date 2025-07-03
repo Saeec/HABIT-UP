@@ -22,10 +22,10 @@ body, html {
 }
 
 /* Header Styles */
-header {
+.head {
   position: relative;
   min-height: 70vh;
-  background-image: url('./Assets/bg_image_abt_us.jpeg');
+  background-image: url('');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

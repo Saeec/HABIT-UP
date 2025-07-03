@@ -2,13 +2,13 @@ import React from 'react';
 //import './Header.css';
 import BellIcon from '../Assets/Bell.svg';
 import ProfileIcon from '../Assets/profile.svg'
+import name from '../Assets/NAME.png'
 
 const Header = () => {
   return (
     <header className="header-container">
       <div className="logo-section">
-        <span className="logo">HABIT UP</span>
-        <span className="tagline">- start your journey now!</span>
+        <img src={name}/>
       </div>
       
       <nav className="navigation">

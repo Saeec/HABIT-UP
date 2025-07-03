@@ -9,7 +9,7 @@ import nameLogo from '../Assets/NAME.png';
 const AboutUs = () => {
   return (
     <div className='page-container'>
-      <header>
+      <header className='head'>
         <div className="overlay"></div>
         <nav>
           <div className="logo">
