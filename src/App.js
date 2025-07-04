@@ -8,11 +8,11 @@ import AboutUs from './Components/AboutUs';
 import LandingPage from './Components/LandingPage';
 import Header from './Components/Header';
 import DBPage from './Components/Dashboard/DBPage';
-
+import CalendarPage from './Components/CalendarPage';
 
 function App() {
   return (
-  <DBPage/>
+  <CalendarPage/>
   );
 }
 
