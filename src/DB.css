@@ -1,0 +1,343 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #354152; /* Matches your blueish shade */
+  padding: 8px 12px;
+  border-radius: 999px;
+  width: 250px;
+  justify-self: center;
+  height: 40px;
+  width: 580px;
+
+}
+
+.search-icon {
+  color: white;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: #b0b9c7;
+}
+.habit-card {
+  background-color: #3c4d65;
+  border-radius: 20px;
+  padding: 20px;
+  width: 320px;
+  height: 300px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.habit-card:hover {
+  transform: scale(1.03);
+}
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.update-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #d6d6d6;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.options-icon {
+  cursor: pointer;
+}
+
+.habit-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.habit-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #dcdcdc;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.fire-icon {
+  color: #ff5e5e;
+  font-size: 20px;
+}
+
+.check-button {
+  width: 44px;
+  height: 44px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.check-button.completed {
+  background-color: #d9d9d9;
+  color: black;
+}
+/* Add these styles to your DB.css */
+.habits-section {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.habits-title {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-left: 20px; /* Align with carousel content */
+  margin-left: 55px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Rest of your existing styles... */
+.habit-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 12px;
+  position: relative;
+}
+
+.habit-row-container {
+  width: 1320px; /* 4 cards × 320px width each */
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;
+}
+
+.habit-row {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: none;
+}
+
+.scroll-btn {
+  background:none;
+  color: black;
+  
+  border:none;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.scroll-btn:hover img{
+  transform: scale(1.1);
+}
+
+/* Habits Header Styles */
+.habits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 20px; /* Match carousel padding */
+}
+
+.add-habit-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #3c4d65; /* Match your card background */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-right: 55px;
+}
+
+.add-habit-btn:hover {
+  background: #4a5d78; /* Slightly lighter on hover */
+}
+
+
+
+/* Rest of your existing styles... */
+.habit-container {
+  background-color: #344258;
+  padding: 24px;
+  border-radius: 16px;
+  width: 520px;
+  color: white;
+  font-family: sans-serif;
+  margin-left: -160px;
+  
+}
+
+.habit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 12px;
+  background-color: #1f2a38;
+  border-radius: 10px;
+  margin-right: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.habit-name {
+  font-weight: bold;
+  white-space: nowrap;
+}
+.Streakheading{
+  margin-left: 165px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}.todo-container {
+  background-color: #344258;
+  border-radius: 16px;
+  padding: 24px;
+  width: 650px;
+  height: 357px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.todo-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.todo-list li {
+  margin-bottom: 10px;
+}
+
+.todo-list input {
+  width: 90%;
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.todo-list input:focus {
+  border-bottom: 1px solid #6cc1ff;
+  box-shadow: 0 1px 0 #6cc1ff;
+}
+
+.clear-btn {
+  color: #ff5c5c;
+  text-align: right;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: auto;
+}
+.Lower-Dashboard {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Optional for responsiveness */
+  margin-right: 100px;
+  margin-left: 280px;
+}
+
+
+
+
+.progress-wrapper, .todo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Optional: Remove Streakheading margin if handled in wrapper */
+.Streakheading {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -100px;
+}
+
+.todo-heading {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}

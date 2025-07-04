@@ -7,10 +7,12 @@ import Login from './Components/Login';
 import AboutUs from './Components/AboutUs';
 import LandingPage from './Components/LandingPage';
 import Header from './Components/Header';
+import DBPage from './Components/Dashboard/DBPage';
+
 
 function App() {
   return (
-  <ProfilePage/>
+  <DBPage/>
   );
 }
 
