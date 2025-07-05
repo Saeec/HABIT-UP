@@ -3,6 +3,9 @@ import React from 'react';
 import BellIcon from '../Assets/Bell.svg';
 import ProfileIcon from '../Assets/profile.svg'
 import name from '../Assets/NAME.png'
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
@@ -12,16 +15,17 @@ const Header = () => {
       </div>
       
       <nav className="navigation">
-        <a href="/" className="nav-link">Home</a>
-        <a href="/" className="nav-link">Leaderboard</a>
-        <a href="/" className="nav-link">Calendar</a>
-        <a href="/" className="nav-link">Settings</a>
+        <NavLink to="/dashboard" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
+        <NavLink to="/leaderboard" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Leaderboard</NavLink>
+        <NavLink to="/calendar" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Calendar</NavLink>
+        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Settings</NavLink>
+
       </nav>
 
         <div className='right-section'>
         <div className="icons">
-        <a href="/" className="icon-link"><img src={BellIcon} className="icon"></img></a>
-         <a href="/" className="icon-link"><img src={ProfileIcon} className="icon"></img></a>
+        <Link to ="/" className='icon-link'><img src={BellIcon} className="icon"></img></Link>
+         <Link to="/profile" className="icon-link"><img src={ProfileIcon} className="icon"></img></Link>
          </div>
         
 

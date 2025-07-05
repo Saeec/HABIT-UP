@@ -13,7 +13,9 @@ body {
   background-size: cover;
   color: #dfd1b7;
 }
-
+form{
+  height: 12cm;
+}
 /* Navigation */
 .navbar {
   position: fixed;

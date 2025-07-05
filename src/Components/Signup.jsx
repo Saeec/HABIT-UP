@@ -3,8 +3,12 @@ import '../Signup.css';
 import signupImage from '../../src/Assets/signup img.png';
 import bodyBg from '../../src/Assets/bodybg_login_signup.jpeg';
 import name from '../../src/Assets/NAME.png'
+import { useNavigate } from 'react-router-dom';
+
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -36,6 +40,10 @@ const Signup = () => {
 
     alert("Signup successful!");
     // You can send the data to a backend here
+     navigate('/dashboard');
+
+  // Optionally reset form
+  
     setFormData({
       name: '',
       email: '',
@@ -59,7 +67,7 @@ const Signup = () => {
           <div className="form-wrapper">
             <h1>Start your journey now!</h1>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} >
               <div className="form-group">
                 <p>NAME</p>
                 <input
@@ -115,8 +123,14 @@ const Signup = () => {
               </button>
 
               <p className="login-link">
-                Already have an account? <a href="#">Log in</a>
-              </p>
+              Already have an account?{" "}
+              <span
+                onClick={() => navigate('/login')}
+                style={{  textDecoration: 'underline', cursor: 'pointer' }}
+              >
+                Log in
+              </span>
+            </p>
             </form>
           </div>
         </div>

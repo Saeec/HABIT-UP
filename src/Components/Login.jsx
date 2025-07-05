@@ -3,6 +3,8 @@ import '../Login.css';
 import loginImage from '../../src/Assets/login pg img.svg';
 import bodyBg from '../../src/Assets/bodybg_login_signup.jpeg';
 import name from '../../src/Assets/NAME.png'
+import { useNavigate } from 'react-router-dom';
+import { Underline } from 'lucide-react';
 
 
 const Login = () => {
@@ -29,12 +31,14 @@ const Login = () => {
     // navigate('/profile');
 
     e.target.reset();
+    navigate('/dashboard')
   };
+  const navigate = useNavigate();
 
   return (
     <div
       className="login-body"
-      
+      style={{ backgroundImage: `url(${bodyBg})` }}
     >
       <div className="login-container">
 
@@ -71,8 +75,8 @@ const Login = () => {
               </button>
 
               <p>
-                Don't have an account? <a href="#">Sign up</a>
-              </p>
+  Don't have an account? <span onClick={() => navigate('/signup')} style={{ cursor: 'pointer',textDecoration: 'underline'}}>Sign Up</span>
+</p>
             </form>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../LandingPage.css';
 import NAME from '../Assets/NAME.png';
 import profileIcon from '../Assets/profile-icon.svg';
@@ -7,6 +9,8 @@ import landingPic2 from '../Assets/landing.pic.2.svg';
 import DashboardWaves from '../Assets/Dashboard-waves.svg';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div
   className="landing-page"
@@ -19,9 +23,13 @@ const LandingPage = () => {
           <img src={NAME} alt="Logo" className="logo" />
         </div>
         <div className="nav-buttons">
-          <button className="auth-button sign-in">Sign in</button>
-          <button className="auth-button log-in">Log in</button>
-          <img src={profileIcon} alt="Profile" className="profile-icon" />
+          <button className="auth-button sign-in" onClick={() => navigate('/signup')}>
+           Sign in
+          </button>
+          <button className="auth-button log-in" onClick={() => navigate('/login')}>
+            Log in
+          </button>
+         
         </div>
       </nav>
       
@@ -64,7 +72,7 @@ const LandingPage = () => {
         </div>
         <div className="cta-content">
           <h2 className="cta-title">Change your habits with Habit tracker today!!</h2>
-          <button className="cta-button">Start today!</button>
+          <button className="cta-button" onClick={() => navigate('/signup')}>Start today!</button>
         </div>
       </section>
 

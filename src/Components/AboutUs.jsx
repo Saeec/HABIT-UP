@@ -4,28 +4,26 @@ import '../AboutUs.css';
 import BellIcon from '../Assets/Bell.svg';
 import profileIcon from '../Assets/profile-icon.svg';
 import nameLogo from '../Assets/NAME.png';
+import bgImage from '../Assets/bg_image_abt_us.jpeg'
+import Header from './Header';
 
 
 const AboutUs = () => {
   return (
     <div className='page-container'>
-      <header className='head'>
+     <header
+  className='head'
+  style={{
+    backgroundImage: `url(${bgImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+
         <div className="overlay"></div>
-        <nav>
-          <div className="logo">
-            <img src={nameLogo} alt="HABIT UP Logo" />
-          </div>
-          <ul>
-            <li>Home</li>
-            <li>Leaderboard</li>
-            <li>Calendar</li>
-            <li>Contact us</li>
-          </ul>
-          <div className="icons">
-            <img src={BellIcon} alt="Notifications" className="icon" />
-            <img src={profileIcon} alt="Profile" className="icon" />
-          </div>
-        </nav>
+  
+        <div style={{backgroundColor:"#212832"}}>
+       <Header/></div>
 
         <div className="hero-content">
           <h1>Our Story</h1>

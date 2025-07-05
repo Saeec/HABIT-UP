@@ -25,6 +25,9 @@ body, html {
   width: 100%;
   height: 100vh;
 }
+form{
+  height: 1cm;
+}
 
 /* Left Panel */
 .left-panel {
@@ -76,7 +79,7 @@ body, html {
 }
 
 form label {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #333;
 }

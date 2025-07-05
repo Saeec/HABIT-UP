@@ -27,20 +27,31 @@
   flex-grow: 1;
   margin-left: 250px; /* Pushes nav to the right of logo/slogan */
   margin-right: auto;
+  
 }
 
+.navigation a{
+  color:#DFD1B7;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
 .nav-link {
   color: #DFD1B7;
   text-decoration: none;
   font-size: 0.7rem;
   font-weight: 300;
-  transition: color 0.3s ease;
   font-family: 'Inter', sans-serif;
+  position: relative;
+  padding-bottom: 4px;
 }
-.nav-link:hover {
+.nav-link.active {
+  background-color: #334155;
+  padding: 4px 10px;
+  border-radius: 8px;
   color: white;
-  text-decoration: underline;
 }
+
+
 
 body {
   background-color: #212832;
@@ -176,14 +187,7 @@ body {
 .footer-links a:hover {
   color: white;
 }
-.nav-link.active {
-  background-color: #334155; /* Square/box background */
-  border-radius: 4px;
-  border-width: 93px;
-  
-  width: 2.4cm;
-  text-align: center;
-}
+
 .profile-heading {
   background-color: #DFD1B7;
   border-radius: 20px;
