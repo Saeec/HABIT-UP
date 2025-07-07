@@ -1,49 +1,59 @@
+
 // src/components/UserProfileCard.jsx
 import React from 'react';
-//import './UserProfileCard.css';
-import pfp from "../../Assets/pfp.png";  // Using forward slashes
-import "../../App.css"
+import pfp from "../../Assets/pfp.png";
+import "../../ProfileCard.css";
+
 const user = {
-  name: "Adder Stark",
-  email: "adder@example.com",
-  dob: "1999-05-15",
-  joinDate: "2024-01-01",
-  phone: "+91-9876543210",
-  gender: "Non-binary"
+  name: "Sahil Dighe",
+  username: "whosahil",
+  email: "sahildighe1@gmail.com",
+  phone: "9767xxx320",
+  dob: "12/07/25",
+  joinDate: "12/07/25",
+  gender: "Male",
+  habits: ["Gym", "Walk", "Guitar"],
+  streak: 100,
+  leaderboardRank: 53
 };
+
 const UserProfileCard = () => {
   return (
-    <div className='center-part'>
-    <div className='profile-heading'><h3>MY PROFILE</h3></div>
-    <div className="profile-card">
-        <div className="user-info">
-          <div className="user-pfp"><img src={pfp} className='pfp'/></div>
-          <div className="user-details">
-            <h3 className='user-name'>{user.name}</h3>
-            <div className='About-me'><p className='abt'>Leveling habits everyday 🚀</p></div>
+    <div className="profile-container">
+    <div className="profile-left">
+      <img src={pfp} alt="Profile" className="profile-pic" />
+      <h2>{user.name}</h2>
+      <p className="username">username: {user.username}</p>
 
-         <div className='inline-details'>   
-            <div className="details-1">
-              <p className="email"><span>Email: </span>{user.email}</p>
-              <p className="dob"><span>Date of Birth:</span> {user.dob}</p>
-            </div>
-
-      
-        <div className="details-2">
-              <p className="joined-date"><span>Joined Date:</span> {user.joinDate}</p>
-              <p className="phone"><span>Phone:</span> {user.phone}</p>
-              <p className='gender'><span>Gender:</span>{user.gender}</p>
-            </div>
-         </div>
-         </div>
-     </div>
-        
-      
+      <div className="left-details-box">
+        <p><strong>Date Joined:</strong> {user.joinDate}</p>
+        <p><strong>Phone no:</strong> {user.phone}</p>
+        <p><strong>Email Id:</strong> {user.email}</p>
+        <p><strong>D.O.B:</strong> {user.dob}</p>
+        <p><strong>Gender:</strong> {user.gender}</p>
+      </div>
     </div>
-    <div className='side-links'>
-        <a href='/'className='LogOut'>Log Out</a>
-        <a href="/" className='EditProfile'>Edit Profile</a> 
-    </div>
+      <div className="profile-right">
+        <div className="leaderboard">
+          <p>LeaderBoard Rank</p>
+          <div className="rank">
+            🏆 {user.leaderboardRank}
+          </div>
+        </div>
+        <div className="streak">
+          <p>Highest Streak</p>
+          <h2>🔥 {user.streak} Days</h2>
+        </div>
+        <div className="habits">
+          {user.habits.map((habit, idx) => (
+            <div className="habit-row" key={idx}>
+              <span>Habit</span>
+              <span>{habit}</span>
+            </div>
+          ))}
+        </div>
+        <button className="edit-button">Edit Profile</button>
+      </div>
     </div>
   );
 };

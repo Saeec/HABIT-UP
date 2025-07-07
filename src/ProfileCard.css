@@ -1,0 +1,106 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color:#2d3949;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  width:25cm;
+  justify-self: center;
+  
+  border-radius: 45px;
+}
+
+.profile-left, .profile-right {
+  background-color: #242b35;
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-details-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.left-details-box p {
+  background-color: #1f2630;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.username {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.profile-left p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.leaderboard {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #f2f2f2;
+}
+
+.streak {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.habits {
+  width: 100%;
+}
+
+.habit-row {
+  background-color: #1f2630;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.edit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #bfb29e;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #d1c7b5;
+}
