@@ -3,6 +3,7 @@
 import React from 'react';
 import pfp from "../../Assets/pfp.png";
 import "../../ProfileCard.css";
+import { Link } from 'react-router-dom';
 
 const user = {
   name: "Sahil Dighe",
@@ -52,7 +53,8 @@ const UserProfileCard = () => {
             </div>
           ))}
         </div>
-        <button className="edit-button">Edit Profile</button>
+         <Link to="/EditProfile">
+        <button className="edit-button">Edit Profile</button></Link>
       </div>
     </div>
   );

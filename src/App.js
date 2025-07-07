@@ -9,6 +9,7 @@ import LandingPage from './Components/LandingPage';
 import Header from './Components/Header';
 import DBPage from './Components/Dashboard/DBPage';
 import CalendarPage from './Components/CalendarPage';
+import EditProfilePage from './Components/EditProfile/EditProfilePage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path ="/aboutus" element={<AboutUs/>} />
         <Route path ="/settings" element={<AboutUs/>} />
         <Route path ="/profile" element={<ProfilePage/>} />
+        <Route path="/EditProfile" element={<EditProfilePage/>} />
 
 
       </Routes>
